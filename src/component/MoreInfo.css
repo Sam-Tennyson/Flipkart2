@@ -1,0 +1,14 @@
+.makeWhite {
+    background-color: rgb(187, 205, 228);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.block {
+    /* padding: 5px 5px; */
+    font-size: 14px;
+}
+.makeWhite > .block > .MuiSvgIcon-root {
+    color: #2874f0;
+}

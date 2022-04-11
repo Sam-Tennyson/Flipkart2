@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+import {Routes, Route} from 'react-router-dom'
+import Home from './component/Home';
+import Test from './component/Test'
+import Login from "./component/Login"
+import Signup from './component/Signup'
+import CardNew from './component/CardNew';
+import PageNotFound from './component/PageNotFound';
+import Carts from './component/Carts';
+import NewPage from "./component/NewPage"
+
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/test" element={<Test />}/>
+          <Route path="/signin" element={<Login />}/>
+          <Route path="/signup" element={<Signup />}/>
+          <Route path="/carts/:id" element={<Carts />}/>
+          <Route path="/product/:id" element={<CardNew />}/>
+          <Route path="/Home/:id" element={<NewPage />}/>
+          <Route path="*" element={<PageNotFound />}/>
+        </Routes>
+      
+    </>
+  )
 }
 
-export default App;
+export default App

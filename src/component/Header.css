@@ -1,0 +1,83 @@
+.header {
+    background-color: #2874f0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-first {
+    padding-right: -100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 120px;
+}
+
+.header-first > img{
+    width: 75px;
+    object-fit: contain;
+}
+
+.header-second {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 3px;
+
+}
+.header-second > input {
+    border: none;
+    outline: none;
+    width: 36vw;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+/* .header-second > .MuisvgIcon-root {
+    border: "1px solid red";
+    color: #2874f0;
+    padding: 5px;
+    font-size: 25px;
+} */
+
+.header-third >button {
+    border: none;
+    outline: none;
+    width: 9vw;
+    color: #2874f0;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.header-fourth {
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-fourth > span {
+    color: white;
+    font-weight: 600;
+}
+
+.header-fourth > .MuiSvgIcon-root {
+    color: white;
+}
+
+.header-fifth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-fifth > .MuiSvgIcon-root {
+    color: white;
+}
+.header-fifth > span {
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
